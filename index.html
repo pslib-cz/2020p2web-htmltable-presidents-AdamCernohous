@@ -5,7 +5,7 @@
     <title>Čeští a slovenští prezidenti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      table.presidents {width: 100%;}
+      table.presidents {width: 100%; border-spacing: 0;}
       .presidents th, .presidents td {border: 1px solid gray; padding: 5px;}
       .presidents th {font-weight: 700; text-align: center;}
       .presidents td {font-weight: 400;}
@@ -14,97 +14,104 @@
       .presidents .roky {background-color: #D7CCC8;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      tfoot tr{border-top: black 5px solid;}
+      h1{text-align: center;}
     </style>
   </head>
   <body>
+    <h1>Seznam prezidentů ČR a SR od roku 1989</h1>
     <table class="presidents">
+      <col class="roky">
+      <col class="roky">
+      <col class="cr">
+      <col class="sr">
       <caption></caption>
-
       <thead>
         <tr>
-          <th class="roky">Od</th>
-          <th class="roky">Do</th>
-          <th class="cr">Česko</th>
+          <th>Od</th>
+          <th >Do</th>
+          <th>Česko</th>
           <th>Slovensko</th>
           <th>Poznámka</th>
         </tr>
       </thead>
       <tbody class="komuniste">
         <tr>
-          <th class="roky">1975</th>
-          <th class="roky">1989</th>
+          <th>1975</th>
+          <th>1989</th>
           <th colspan="2">Gustav husák</th>
           <th></th>
         </tr>
       </tbody>
       <tbody class="spolecne">
         <tr>
-          <th class="roky">1989</th>
-          <th class="roky">1990</th>
+          <th>1989</th>
+          <th>1990</th>
           <th colspan="2" rowspan="2">Václav Havel</th>
           <th>Zvolen federálním shromážděním (s převahou poslanců KSČ)</th>
         </tr>
         <tr>
-          <th class="roky">1990</th>
-          <th class="roky">1992</th>
+          <th>1990</th>
+          <th>1992</th>
           <th>31. prosince 1992 zaniká Česko-Slovenská Federativní Republika</th>
         </tr>
       </tbody>
       <tbody>
         <tr>
-          <th class="roky">1993</th>
-          <th class="roky">1998</th>
-          <th class="cr" rowspan="3">Václav Havel</th>
-          <th class="sr">Michal Kováč</th>
+          <th>1993</th>
+          <th>1998</th>
+          <th rowspan="3">Václav Havel</th>
+          <th>Michal Kováč</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">1998</th>
-          <th class="roky">1999</th>
-          <th style="color: rgb(160, 160, 160);" class="sr">bez prezidenta</th>
+          <th>1998</th>
+          <th>1999</th>
+          <th style="color: rgb(160, 160, 160);">bez prezidenta</th>
           <th style="color: rgb(160, 160, 160);">Na Slovensku v této době byli pověřeni prezidentskými pravomocemi tehdejší premiéři</th>
         </tr>
         <tr>
-          <th class="roky">1999</th>
-          <th class="roky">2003</th>
-          <th class="sr" rowspan="2">Rudolf Schuster</th>
+          <th>1999</th>
+          <th>2003</th>
+          <th rowspan="2">Rudolf Schuster</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">2003</th>
-          <th class="roky">2004</th>
-          <th class="cr" rowspan="2">Václav Klaus</th>
+          <th>2003</th>
+          <th>2004</th>
+          <th rowspan="2">Václav Klaus</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">2004</th>
-          <th class="roky">2013</th>
-          <th class="sr" rowspan="2">Ivan Gašparovič</th>
+          <th >2004</th>
+          <th >2013</th>
+          <th rowspan="2">Ivan Gašparovič</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">2013</th>
-          <th class="roky">2014</th>
-          <th class="cr" rowspan="3">Miloš Zeman</th>
+          <th >2013</th>
+          <th >2014</th>
+          <th rowspan="3">Miloš Zeman</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">2014</th>
-          <th class="roky">2019</th>
-          <th class="sr">Andrej Kiska</th>
+          <th>2014</th>
+          <th>2019</th>
+          <th>Andrej Kiska</th>
           <th></th>
         </tr>
         <tr>
-          <th class="roky">2019</th>
-          <th class="roky">dosud</th>
-          <th class="sr">Zuzana Čaputová</th>
+          <th>2019</th>
+          <th>dosud</th>
+          <th>Zuzana Čaputová</th>
           <th></th>
         </tr>
       </tbody>
+      <tfoot>
         <tr>
-          <th class="roky" colspan="2">Počet</th>
-          <th class="cr">2+3</th>
-          <th class="sr">2+5</th>
+          <th colspan="2">Počet</th>
+          <th>2+3</th>
+          <th>2+5</th>
           <th></th>
         </tr>
       </tfoot>
